@@ -1,4 +1,5 @@
-# scrollSlider
+scrollSlider
+============
 
 |Author|evan.fu|
 |---|---
@@ -27,7 +28,7 @@
 ```
 
 ## script
-#### 1. use javascript
+### 1. use javascript
 ```javascript
 var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
     direction : 'horizontal',//vertical 滚动方向 水平/垂直
@@ -51,7 +52,7 @@ var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
 myScrollSlider1.slideNext()
 ```
 
-#### 2. use jQuery
+### 2. use jQuery
 ```html
 <script src="jquery.js"></script>
 ```
