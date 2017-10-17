@@ -7,7 +7,7 @@
 ---
 
 ## HTML
-```
+```html
 <div id="scrollSlider_1" class="scrollSlider scrollSlider-1">
     <div class="scrollSlider-container">
         <ul class="scrollSlider-wrapper">
@@ -25,11 +25,10 @@
     </div>
 </div>
 ```
----
 
 ## script
-1.use javascript
-```
+###1.use javascript
+```javascript
 var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
     direction : 'horizontal',//vertical 滚动方向 水平/垂直
     mode : 'left',//right 滑动方向 左/右 , 上/下
@@ -40,22 +39,22 @@ var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
     loop : true 
 });
 ```  
----
 
-## Object function
-`go`
-`stop`
-`slidePrev`
-`slideNext`
 
-```
+#### Object function
+`go`  
+`stop`  
+`slidePrev`  
+`slideNext`  
+
+```javascript
 myScrollSlider1.slideNext()
 ```
 
 2.use jQuery
 <script src="jquery.js"></script>
     
-```
+```javascript
 $('.scrollSlider-2').scrollSlider({
     direction : 'horizontal',//vertical 滚动方向 水平/垂直
     mode : 'right',//right 滑动方向 左/右 , 上/下
@@ -65,6 +64,6 @@ $('.scrollSlider-2').scrollSlider({
     loop : true 
 });
 ```
----
+
 ## Example
 1.[demo](https://awin8516.github.io/scrollSlider/docs/)  
