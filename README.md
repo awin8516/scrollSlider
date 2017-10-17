@@ -27,7 +27,7 @@
 ```
 
 ## script
-###1.use javascript
+#### 1.use javascript
 ```javascript
 var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
     direction : 'horizontal',//vertical 滚动方向 水平/垂直
@@ -41,7 +41,7 @@ var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
 ```  
 
 
-#### Object function
+##### Object function
 `go`  
 `stop`  
 `slidePrev`  
@@ -51,9 +51,11 @@ var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
 myScrollSlider1.slideNext()
 ```
 
-2.use jQuery
+#### 2.use jQuery
+```html
 <script src="jquery.js"></script>
-    
+```
+
 ```javascript
 $('.scrollSlider-2').scrollSlider({
     direction : 'horizontal',//vertical 滚动方向 水平/垂直
@@ -66,4 +68,4 @@ $('.scrollSlider-2').scrollSlider({
 ```
 
 ## Example
-1.[demo](https://awin8516.github.io/scrollSlider/docs/)  
+1. [Demo](https://awin8516.github.io/scrollSlider/docs/)  
