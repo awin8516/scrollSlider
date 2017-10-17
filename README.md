@@ -1,6 +1,5 @@
 # scrollSlider
 -----------------------------------------
-
     <div id="scrollSlider_1" class="scrollSlider scrollSlider-1">
 		<div class="scrollSlider-container">
 			<ul class="scrollSlider-wrapper">
