@@ -1,5 +1,7 @@
 # scrollSlider
------------------------------------------
+====================================================
+
+## HTML
     <div id="scrollSlider_1" class="scrollSlider scrollSlider-1">
 		<div class="scrollSlider-container">
 			<ul class="scrollSlider-wrapper">
@@ -16,8 +18,9 @@
 			<div class="scrollSlider-next"></div>
 		</div>
 	</div>
-
-use javascript
+===========================================================
+## script
+1.use javascript
 
     var myScrollSlider1 = new scrollSlider('scrollSlider_1', {
         direction : 'horizontal',//vertical 滚动方向 水平/垂直
@@ -29,7 +32,15 @@ use javascript
         loop : true 
     });
     
-use jQuery
+## Object function
+`go`
+`stop`
+`slidePrev`
+`slideNext`
+
+eg: myScrollSlider1.slideNext()
+---------------------------------------------------------------
+2.use jQuery
 <script src="jquery.js"></script>
     
     $('.scrollSlider-2').scrollSlider({
@@ -40,3 +51,6 @@ use jQuery
         speedQuick : 4,
         loop : true 
     });
+    
+## Example
+[demo](https://awin8516.github.io/scrollSlider/docs/)  

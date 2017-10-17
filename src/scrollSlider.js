@@ -75,6 +75,7 @@ const _$ = require('./fun.js')
 		s.prev = _$.getElement('.scrollSlider-prev', s.self);
 		s.next = _$.getElement('.scrollSlider-next', s.self);		
 		s.imgs = _$.getElement('img', s.wrapper);
+		s.timer = null;
 		var sMode = {left:1,right:-1,top:1,bottom:-1};
 		var sSize = s.option.direction == 'horizontal' ? 'clientWidth':'clientHeight'; 
 		var sDirection = s.option.direction == 'horizontal' ? 'scrollLeft':'scrollTop'; 
@@ -85,9 +86,12 @@ const _$ = require('./fun.js')
 			start : isPc ? 'mouseenter':'touchstart', 
 			end : isPc ? 'mouseleave':'touchend'
 		};
+		
+		console.log(s.option.direction)
 		_$.addClass('scrollSlider-'+s.option.direction, s.self);
 		
 		s.scrollto = function(scroll, speed, container){
+			clearTimeout(s.timer);
 			container = container || s.container;
 			var anOption = {};
 			anOption[sDirection] = scroll;
@@ -160,9 +164,9 @@ const _$ = require('./fun.js')
 			_$.addEvent(s.container, events.start, s.stop);
 			_$.addEvent(s.container, events.end, function(){
 				s.stop();
-				s.option.autoplay && setTimeout(function(){
+				s.option.autoplay && (s.timer = setTimeout(function(){
 					s.go();
-				}, 500);
+				}, 500));
 			});
 		};
 		
